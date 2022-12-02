@@ -51,7 +51,7 @@ export default function ApexPage() {
   return (
     <>
       <h1 className={styles.title}>
-        <a target="_blank" href="https://apexcharts.com/docs/react-charts/">
+        <a target="_blank" rel="nofollow" href="https://apexcharts.com/docs/react-charts/">
           Apex Charts (React)
         </a>
       </h1>
@@ -87,7 +87,9 @@ export default function ApexPage() {
           </div>
         )}
       </div>
-      <h4><sup>*</sup>circle charts are clickable</h4>
+      <h4>
+        <sup>*</sup>circle charts are clickable
+      </h4>
       <h2 className={styles.title}>{message}</h2>
     </>
   );

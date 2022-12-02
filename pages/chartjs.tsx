@@ -103,7 +103,9 @@ export default function ApexPage() {
   return (
     <>
       <h1 className={styles.title}>
-        <a target="_blank" href="https://react-chartjs-2.js.org/">Chart JS (React)</a>
+        <a target="_blank" rel="nofollow" href="https://react-chartjs-2.js.org/">
+          Chart JS (React)
+        </a>
       </h1>
       <div className={styles.chartContainer}>
         <div className={styles.chart}>
@@ -116,7 +118,9 @@ export default function ApexPage() {
           <Pie ref={chartRef} onClick={onClick} data={data} />
         </div>
       </div>
-      <h4><sup>*</sup>circle charts are clickable</h4>
+      <h4>
+        <sup>*</sup>circle charts are clickable
+      </h4>
       <h2 className={styles.title}>{message}</h2>
     </>
   );

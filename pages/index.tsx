@@ -17,14 +17,18 @@ export default function Home() {
           Charting Library Spike <a href="https://upstartnetwork.atlassian.net/browse/REL-9508">REL-9508</a>
         </h1>
         <div className={styles.grid}>
-          <a href="#" className={styles.card} onClick={() => router.push('/apex')}>
+          <div className={styles.card} onClick={() => router.push('/apex')}>
             <h2>APEX Charts &rarr;</h2>
             <p>Modern & Interactive Open-source Charts</p>
-          </a>
-          <a href="#" className={styles.card} onClick={() => router.push('/chartjs')}>
+          </div>
+          <div className={styles.card} onClick={() => router.push('/chartjs')}>
             <h2>ChartJS &rarr;</h2>
             <p>Simple yet flexible JavaScript charting for designers & developers</p>
-          </a>
+          </div>
+          <div className={styles.card} onClick={() => router.push('/highjs')}>
+            <h2>High Charts &rarr;</h2>
+            <p>Over a decade of first-hand experience in building charting solutions</p>
+          </div>
         </div>
       </main>
     </div>
