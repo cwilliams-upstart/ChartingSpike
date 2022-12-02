@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 
@@ -17,27 +16,17 @@ export default function Home() {
         <h1 className={styles.title}>
           Charting Library Spike <a href="https://upstartnetwork.atlassian.net/browse/REL-9508">REL-9508</a>
         </h1>
-
         <div className={styles.grid}>
           <a href="#" className={styles.card} onClick={() => router.push('/apex')}>
             <h2>APEX Charts &rarr;</h2>
             <p>Modern & Interactive Open-source Charts</p>
           </a>
+          <a href="#" className={styles.card} onClick={() => router.push('/chartjs')}>
+            <h2>ChartJS &rarr;</h2>
+            <p>Simple yet flexible JavaScript charting for designers & developers</p>
+          </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }

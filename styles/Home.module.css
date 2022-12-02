@@ -87,7 +87,14 @@
 }
 
 .chart{
-  display: inline-flex;
+  margin: auto;
+}
+
+.chartContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card:hover,

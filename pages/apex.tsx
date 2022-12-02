@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 export default function ApexPage() {
-  const [clicked, setClicked] = useState('');
+  const [message, setMsg] = useState("");
   const bar = {
     options: {
       chart: {
@@ -32,8 +32,10 @@ export default function ApexPage() {
       chart: {
         events: {
           dataPointSelection: (event: any, chartContext: any, config: any) => {
-            const msg = `${config.w.globals.labels[config.dataPointIndex]} - ${config.w.globals.series[config.dataPointIndex]} cars`;
-            setClicked(msg);
+            const msg = `${config.w.globals.labels[config.dataPointIndex]} - ${
+              config.w.globals.series[config.dataPointIndex]
+            } cars`;
+            setMsg(msg);
           },
         },
       },
@@ -47,45 +49,46 @@ export default function ApexPage() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <>
       <h1 className={styles.title}>
-        <a href="https://apexcharts.com/docs/react-charts/">
+        <a target="_blank" href="https://apexcharts.com/docs/react-charts/">
           Apex Charts (React)
         </a>
       </h1>
-      {isClient && (
-        <div className={styles.chart}>
-          <Chart
-            options={bar.options}
-            series={bar.series}
-            type="bar"
-            width="500"
-          />
-        </div>
-      )}
-      {isClient && (
-        <div className={styles.chart}>
-          <Chart
-            options={pie.options}
-            series={pie.series}
-            type="donut"
-            width="500"
-          />
-        </div>
-      )}
-      {isClient && (
-        <div className={styles.chart}>
-          <Chart
-            options={pie.options}
-            series={pie.series}
-            type="pie"
-            width="500"
-          />
-        </div>
-      )}
-      <h2 className={styles.title}>
-        {clicked}
-      </h2>
-    </div>
+      <div className={styles.chartContainer}>
+        {isClient && (
+          <div className={styles.chart}>
+            <Chart
+              options={bar.options}
+              series={bar.series}
+              type="bar"
+              width="500"
+            />
+          </div>
+        )}
+        {isClient && (
+          <div className={styles.chart}>
+            <Chart
+              options={pie.options}
+              series={pie.series}
+              type="donut"
+              width="500"
+            />
+          </div>
+        )}
+        {isClient && (
+          <div className={styles.chart}>
+            <Chart
+              options={pie.options}
+              series={pie.series}
+              type="pie"
+              width="500"
+            />
+          </div>
+        )}
+      </div>
+      <h4><sup>*</sup>circle charts are clickable</h4>
+      <h2 className={styles.title}>{message}</h2>
+    </>
   );
 }
