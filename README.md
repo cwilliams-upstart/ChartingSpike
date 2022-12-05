@@ -1,3 +1,6 @@
+## Charting Library Comparison
+This project was create to compare and contrast different charting libraries. The three in this demo are [Apex Charts]:https://apexcharts.com/, [ChartJS]:https://www.chartjs.org/, and [HighCharts]:https://www.highcharts.com/.
+
 ## Apex Charts
 
 | Pros | Const |
@@ -19,5 +22,6 @@
 | Pros | Const |
 | --- | --- |
 | Very Robust and Interactive | Doesn't account for SSR, Even import needs to be dynamic |
-| Built in print functionality, Many download options | Almost all charts can have multiple series |
+| Built in print functionality with many download options | Almost all charts can have multiple series |
+| Ability to drill down into different series |  |
 
