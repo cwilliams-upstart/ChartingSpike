@@ -1,5 +1,5 @@
 ## Charting Library Comparison
-This project was create to compare and contrast different charting libraries. The three in this demo are [Apex Charts]: (https://apexcharts.com/), ChartJS(https://www.chartjs.org/), and HighChart(https://www.highcharts.com/).
+This project was create to compare and contrast different charting libraries. The three in this demo are Apex Charts(https://apexcharts.com/), ChartJ(https://www.chartjs.org/), and HighCharts(https://www.highcharts.com/).
 
 ## Apex Charts
 
