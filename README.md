@@ -21,7 +21,7 @@ This project was create to compare and contrast different charting libraries. Th
 
 | Pros | Const |
 | --- | --- |
-| Very Robust and Interactive | Doesn't account for SSR, Even import needs to be dynamic |
+| Very Robust and Interactive | Doesn't account for SSR(make sure only ran on client) |
 | Built in print functionality with many download options | Almost all charts can have multiple series |
 | Ability to drill down into different series |  |
 
