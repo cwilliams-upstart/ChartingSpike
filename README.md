@@ -25,7 +25,7 @@ This project was create to compare and contrast different charting libraries. Th
 | --- | --- |
 | Very robust and interactive | Doesn't account for SSR(make sure only ran on client) |
 | Built-in print functionality with many download options | |
-| Ability to drill down into different series |  |
+| Ability to drill down into different series | $150/year |
 | Almost all charts can have multiple series  |  |
 | Good Documentation | |
 
