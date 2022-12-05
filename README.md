@@ -24,7 +24,7 @@ This project was create to compare and contrast different charting libraries. Th
 | Pros | Cons |
 | --- | --- |
 | Very robust and interactive | Doesn't account for SSR(make sure only ran on client) |
-| Built0-in print functionality with many download options | |
+| Built-in print functionality with many download options | |
 | Ability to drill down into different series |  |
 | Almost all charts can have multiple series  |  |
 | Good Documentation | |
