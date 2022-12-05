@@ -3,7 +3,7 @@ This project was create to compare and contrast different charting libraries. Th
 
 ## Apex Charts
 
-| Pros | Const |
+| Pros | Cons |
 | --- | --- |
 | Modern looking charts | Doesn't account for SSR, Even import needs to be dynamic |
 | Built in print functionality | Only some charts allow multiple series (bar charts) |
@@ -11,9 +11,9 @@ This project was create to compare and contrast different charting libraries. Th
 
 ## Chart Js
 
-| Pros | Const |
+| Pros | Cons |
 | --- | --- |
-| SSR with no issues | Simplistic look |
+| SSR with no issues | Simple looking |
 | SSR with no issues | No print functionality |
 | Good Documentation | |
 
@@ -21,7 +21,7 @@ This project was create to compare and contrast different charting libraries. Th
 
 ## Hight Charts
 
-| Pros | Const |
+| Pros | Cons |
 | --- | --- |
 | Very Robust and Interactive | Doesn't account for SSR(make sure only ran on client) |
 | Built in print functionality with many download options | Almost all charts can have multiple series |
