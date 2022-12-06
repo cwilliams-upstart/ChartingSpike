@@ -14,8 +14,7 @@ This project was create to compare and contrast different charting libraries. Th
 | Pros | Cons |
 | --- | --- |
 | SSR with no issues | Simple looking |
-| SSR with no issues | No print functionality |
-| Good Documentation | |
+| Good Documentation | No print functionality |
 
 
 
